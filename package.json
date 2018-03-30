@@ -1,5 +1,5 @@
 {
-  "name": "mehserve",
+  "name": "mehserve-test",
   "version": "2.0.0-2",
   "description": "A simple port-sharing proxy for development on multiple local domains, supports websockets",
   "main": "index.js",
@@ -28,6 +28,7 @@
   "keywords": [
     "dns",
     "dev",
+    "test",
     "meh",
     "pow",
     "powcx",
@@ -39,9 +40,9 @@
     "alias"
   ],
   "bugs": {
-    "url": "https://github.com/benjie/mehserve/issues"
+    "url": "https://github.com/anbud/mehserve/issues"
   },
-  "homepage": "https://github.com/benjie/mehserve#readme",
+  "homepage": "https://github.com/anbud/mehserve#readme",
   "files": [
     "package.json",
     "README.md",

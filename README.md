@@ -1,6 +1,6 @@
 # mehserve
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/benjie)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/andronix)
 
 A simple port-sharing proxy for development on multiple local domains, supports
 websockets, SSL, and queuing requests whilst development server restarts.
@@ -8,7 +8,7 @@ websockets, SSL, and queuing requests whilst development server restarts.
 ## Features
 
 - Quick (near instant) startup
-- Built in DNS server to redirect *.meh, *.dev to 127.0.0.1 (requires
+- Built in DNS server to redirect *.meh, *.dev, *.test to 127.0.0.1 (requires
   additional configuration for your system to use this server)
 - Proxies regular HTTP requests and websocket connections based on the `Host`
   HTTP header
@@ -67,7 +67,7 @@ To set up a subdomain, simply run
 
 `mehserve add mysite 1337`
 
-This'll tell mehserve to proxy all HTTP requests for `mysite.dev`, `mysite.meh`
+This'll tell mehserve to proxy all HTTP requests for `mysite.dev`, `mysite.meh`, `mysite.test`
 and `mysite.*.*.*.*.xip.io` to `localhost:1337`
 
 #### Static files
