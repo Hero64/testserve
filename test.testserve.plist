@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>meh.mehserve</string>
+    <string>test.testserve</string>
     <key>ProgramArguments</key>
     <array>
         <string>sh</string>
         <string>-i</string>
         <string>-c</string>
-        <string>$SHELL --login -c "/usr/local/bin/mehserve run"</string>
+        <string>$SHELL --login -c "/usr/local/bin/testserve run"</string>
     </array>
     <key>StandardErrorPath</key>
     <string>/dev/null</string>

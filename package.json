@@ -1,17 +1,17 @@
 {
-  "name": "mehserve-test",
-  "version": "2.0.0-2",
+  "name": "testserve",
+  "version": "1.0.0-2",
   "description": "A simple port-sharing proxy for development on multiple local domains, supports websockets",
   "main": "index.js",
   "bin": {
-    "mehserve": "./bin/mehserve"
+    "mehserve": "./bin/testserve"
   },
   "scripts": {
     "prepublish": "babel src --out-dir . --source-maps",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "babel src --out-dir . --source-maps --watch"
   },
-  "author": "Benjie Gillam <code@benjiegillam.com>",
+  "author": "Andrej Budinčević <andrej.budincevic@zamphyr.com>",
   "license": "MIT",
   "dependencies": {
     "async": "^1.2.1",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benjie/mehserve.git"
+    "url": "git+https://github.com/anbud/testserve.git"
   },
   "keywords": [
     "dns",
@@ -40,9 +40,9 @@
     "alias"
   ],
   "bugs": {
-    "url": "https://github.com/anbud/mehserve/issues"
+    "url": "https://github.com/anbud/testserve/issues"
   },
-  "homepage": "https://github.com/anbud/mehserve#readme",
+  "homepage": "https://github.com/anbud/testserve#readme",
   "files": [
     "package.json",
     "README.md",
