@@ -8,12 +8,12 @@ const fs = require("fs");
 const fsP = require("mz/fs");
 const tls = require("tls");
 
-const CONFIG_DIR = `${process.env.HOME}/.mehserve`;
+const CONFIG_DIR = `${process.env.HOME}/.testserve`;
 const HTML_DIR = `${__dirname}/html`;
 const PORT = process.env.PORT ? process.env.PORT : 12439;
 const SSL_PORT = process.env.SSL_PORT ? process.env.SSL_PORT : 12443;
 const DNS_PORT = process.env.DNS_PORT ? process.env.DNS_PORT : 15353;
-const SUFFIXES = [/\.dev$/i, /\.meh$/i, /\.test$/i, /(\.[0-9]+){2,4}\.xip\.io$/i];
+const SUFFIXES = [/\.test$/i, /(\.[0-9]+){2,4}\.xip\.io$/i];
 // Maximum number of attempts with exponential back-off
 let EXPONENTIAL_MAXIMUM_ATTEMPTS = 25;
 // Maximum delay between exponential back-off attempts
@@ -319,7 +319,7 @@ server.use(handle);
 var httpServer = http.createServer(server);
 httpServer.listen(PORT, function() {
   const { port } = httpServer.address();
-  console.log(`mehserve v${version} listening on port ${port}`);
+  console.log(`testserve v${version} listening on port ${port}`);
 });
 var httpsServer = https.createServer(
   {
@@ -341,7 +341,7 @@ var httpsServer = https.createServer(
 );
 httpsServer.listen(SSL_PORT, function() {
   const { port } = httpsServer.address();
-  console.log(`mehserve v${version} (SSL) listening on port ${port}`);
+  console.log(`testserve v${version} (SSL) listening on port ${port}`);
 });
 
 httpServer.on("upgrade", upgrade);

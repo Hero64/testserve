@@ -3,7 +3,7 @@ const childProcess = require("mz/child_process");
 const os = require("os");
 const platform = os.platform();
 
-const CONFIG_DIR = `${process.env.HOME}/.mehserve`;
+const CONFIG_DIR = `${process.env.HOME}/.testserve`;
 
 function run(binary, args, options) {
   const cp = childProcess.spawn(binary, args, options);
@@ -45,7 +45,7 @@ extendedKeyUsage = serverAuth
 subjectAltName = @alt_names
 [alt_names]
 DNS.1 = ${hostname}
-DNS.2 = ${hostname}.meh
+DNS.2 = ${hostname}.test
 DNS.3 = ${hostname}.dev
 DNS.4 = ${hostname}.test
 `
