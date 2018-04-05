@@ -29,7 +29,7 @@
     "dns",
     "dev",
     "test",
-    "meh",
+    "test",
     "pow",
     "powcx",
     "local",
@@ -47,7 +47,7 @@
     "package.json",
     "README.md",
     "LICENSE.md",
-    "bin/mehserve",
+    "bin/testserve",
     "cli.js",
     "cli.js.map",
     "dnsserver.js",
@@ -57,9 +57,9 @@
     "index.js.map",
     "ssl.js",
     "ssl.js.map",
-    "meh.firewall.plist",
-    "meh.mehserve.plist",
-    "meh.resolver"
+    "test.firewall.plist",
+    "test.testserve.plist",
+    "test.resolver"
   ],
   "devDependencies": {
     "babel": "6.23.0",
