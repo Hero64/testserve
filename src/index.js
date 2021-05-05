@@ -57,13 +57,25 @@ const handleError = (req, res, _next) =>
     switch (error.code) {
       case "ECONNREFUSED":
         code = 502;
-        title = "Bad Gateway";
+        title = "Bad Gateway: Connection Refused";
         message = `Looks like you forgot to run server on port ${error.port}!`;
         break;
-      default:
-        code = error.code || 500;
+      case "ECONNRESET":
+        code = 502;
+        title = "Bad Gateway: Connection Reset";
+        message = `The server abruptly closed its end of the connection ─ perhaps it crashed?`;
+        break;
+      default: {
+        const errorCodeAsInt = error.code
+          ? parseInt(String(error.code), 10)
+          : null;
+        code =
+          errorCodeAsInt && errorCodeAsInt >= 400 && errorCodeAsInt < 600
+            ? errorCodeAsInt
+            : 500;
         title = errorMessages[code] || `Internal Server Error`;
         message = error.message || "Something bad happened!";
+      }
     }
 
     res.statusCode = code;
