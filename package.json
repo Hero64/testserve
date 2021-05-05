@@ -1,6 +1,6 @@
 {
-  "name": "testserve",
-  "version": "1.0.2-2",
+  "name": "@hero64/testserve",
+  "version": "1.0.0",
   "description": "A simple port-sharing proxy for development on multiple local domains, supports websockets",
   "main": "index.js",
   "bin": {
@@ -9,10 +9,9 @@
   "scripts": {
     "prepublish": "babel src --out-dir . --source-maps",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "babel src --out-dir . --source-maps --watch",
-    "postinstall": "babel src --out-dir . --source-maps"
+    "watch": "babel src --out-dir . --source-maps --watch"
   },
-  "author": "Andrej Budinčević <andrej.budincevic@zamphyr.com>",
+  "author": "Aníbal Jorquera <ajorquera.cornejo@gmail.com",
   "license": "MIT",
   "dependencies": {
     "async": "^1.2.1",
@@ -41,9 +40,9 @@
     "alias"
   ],
   "bugs": {
-    "url": "https://github.com/anbud/testserve/issues"
+    "url": "https://github.com/hero64/testserve/issues"
   },
-  "homepage": "https://github.com/anbud/testserve#readme",
+  "homepage": "https://github.com/hero64/testserve#readme",
   "files": [
     "package.json",
     "README.md",
